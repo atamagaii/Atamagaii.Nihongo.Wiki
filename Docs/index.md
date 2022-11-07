@@ -1,4 +1,4 @@
 ## Grammar
-[Copula](docs/grammar/copula.md)
+[Copula](grammar/copula.md)
 
 some other change!
