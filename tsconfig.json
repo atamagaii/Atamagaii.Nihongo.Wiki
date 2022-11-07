@@ -1,0 +1,8 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "ESNext",
+        "moduleResolution": "nodeNext"
+    }
+}
