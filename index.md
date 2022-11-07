@@ -1,2 +1,2 @@
 I'm the index
-[copula](grammar/copula.md)
+[copula](./grammar/copula.md)
