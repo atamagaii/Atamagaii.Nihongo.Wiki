@@ -1,7 +1,7 @@
 // Import rollup plugins
 import html from '@web/rollup-plugin-html';
 import {copy} from '@web/rollup-plugin-copy';
-import resolve from '@rollup/plugin-node-resolve';
+import {nodeResolve} from '@rollup/plugin-node-resolve';
 import {terser} from 'rollup-plugin-terser';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
 import summary from 'rollup-plugin-summary';
@@ -14,7 +14,7 @@ export default {
       input: 'index.html',
     }),
     // Resolve bare module specifiers to relative paths
-    resolve(),
+    nodeResolve(),
     // Minify HTML template literals
     minifyHTML(),
     // Minify JS
@@ -33,5 +33,5 @@ export default {
   output: {
     dir: 'Docs',
   },
-  preserveEntrySignatures: 'strict',
+  preserveEntrySignatures: 'strict'
 };
